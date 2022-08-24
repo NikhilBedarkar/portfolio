@@ -1,0 +1,35 @@
+.a{
+    display: flex;
+    margin-top: 20px;
+}
+.a-mob{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.a-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-right{
+margin: 0 50px;
+}
+.a-img{
+    width: 60%;
+    height: 80%;
+    margin: 50px;
+    border-radius: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+.a-title{
+    margin: 50px;
+    font-weight : 400;
+}
+.a-sub{
+    margin: 20px 0;
+}
+.a-desc{
+    font-weight: 300;
+}
