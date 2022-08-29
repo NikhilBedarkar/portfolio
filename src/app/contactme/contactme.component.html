@@ -4,11 +4,11 @@
     <div className="c-left">
       <h1><p className="c-desc"><b>Get in touch.</b> Contact with me.</p></h1>
       <!-- <form ref="{formRef}" onSubmit="{handleSubmit}"> -->
-      <form action="">
+      <form #f="ngForm" (ngSubmit)="sendMail($event);f.resetForm()">
         <div class="f-name">
           <mat-form-field class="full-width" appearance="fill">
             <mat-label>Name</mat-label>
-            <input matInput type="text" placeholder="john wick" name="user_name" />
+            <input matInput ngModel type="text" placeholder="john wick" name="user_name" />
           </mat-form-field>
         </div>
          <div class="f-subject">
@@ -16,6 +16,7 @@
             <mat-label>Subject</mat-label>
             <input
               matInput
+              ngModel 
               type="text"
               placeholder="Enter subject"
               name="user_subject"
@@ -25,13 +26,13 @@
           <mat-form-field class="full-width" appearance="fill"
             >
             <mat-label>Email</mat-label>
-            <input matInput type="text" placeholder="john.wick@mail.com" name="user_email"
+            <input matInput ngModel type="text" placeholder="john.wick@mail.com" name="user_email"
           /></mat-form-field>
         </div>
         <div class="f-message">
           <mat-form-field class="full-width" appearance="fill">
             <mat-label>Message</mat-label>
-            <textarea matInput rows="5" placeholder="who killed my dog" name="Message"></textarea>
+            <textarea matInput ngModel rows="5" placeholder="who killed my dog" name="message"></textarea>
           </mat-form-field>
         </div>
         <button mat-raised-button class="c-submit" className="f-formSubmitbtn" color="primary">Send</button>

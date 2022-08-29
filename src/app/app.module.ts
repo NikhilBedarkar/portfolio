@@ -14,6 +14,8 @@ import { IntroComponent } from './intro/intro.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatSidenavContainer } from '@angular/material/sidenav';
 import { DetailsService } from './service/details.service';
+import { EmailService } from './service/email.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,9 @@ import { DetailsService } from './service/details.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MdComponentsModule,
+    FormsModule
   ],
-  providers: [DetailsService],
+  providers: [DetailsService,EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
