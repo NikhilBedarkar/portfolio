@@ -26,15 +26,15 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span routerLink="">portfolio</span>
+      <span routerLink="">Portfolio</span>
       <span class="spacer"></span>
-      <div *ngIf="(isHandset$ | async) === false">
+      <div *ngIf="(isHandset$ | async) === false" class="toolbar-list">
+        <a mat-button routerLink=""><mat-icon aria-label="toolbar home icon">cottage</mat-icon></a>
         <a mat-button routerLink="about"> About</a>
-
         <a mat-button routerLink="skills">Skills</a>
         <a mat-button routerLink="certifications">Certifications</a>
         <a mat-button routerLink="portfolio">Portfolio</a>
-        <a mat-raised-button routerLink="contact" color="warn">ContactMe</a>
+        <a mat-raised-button routerLink="contact" color="warn" >ContactMe</a>
       </div>
     </mat-toolbar>
     <ng-content></ng-content>

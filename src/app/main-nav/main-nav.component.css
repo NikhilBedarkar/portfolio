@@ -12,8 +12,14 @@
 
 .mat-toolbar.mat-primary {
   position: sticky;
+  justify-content: center;
   top: 0;
   z-index: 1;
+}
+
+.toolbar-list{
+  display: flex;
+  justify-items: center;
 }
 
 .spacer{

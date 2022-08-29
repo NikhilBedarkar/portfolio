@@ -13,6 +13,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { IntroComponent } from './intro/intro.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatSidenavContainer } from '@angular/material/sidenav';
+import { DetailsService } from './service/details.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { MatSidenavContainer } from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MdComponentsModule,
   ],
-  providers: [],
+  providers: [DetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

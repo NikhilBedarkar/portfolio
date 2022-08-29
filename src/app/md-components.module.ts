@@ -7,6 +7,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
    MatSidenavModule,
    MatListModule,
    MatExpansionModule,
-   MatProgressBarModule
+   MatProgressBarModule,
+   MatFormFieldModule,
+   MatInputModule,
+   MatCardModule
   ]
 })
 export class MdComponentsModule { }

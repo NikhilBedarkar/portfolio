@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DetailsService } from '../service/details.service';
 
 @Component({
   selector: 'app-certifications',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certifications.component.css']
 })
 export class CertificationsComponent implements OnInit {
-
-  constructor() { }
+  panelOpenState: boolean = false;
+  certification;
+  constructor(detailsService:DetailsService) { 
+    this.certification=detailsService.certification
+  }
 
   ngOnInit(): void {
   }
