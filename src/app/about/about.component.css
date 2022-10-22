@@ -1,11 +1,12 @@
 .a{
     display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 .a-mob{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 .a-left{
     display: flex;
@@ -13,23 +14,35 @@
     align-items: center;
 }
 .a-right{
-margin: 0 50px;
+
 }
 .a-img{
     width: 60%;
     height: 80%;
-    margin: 50px;
-    border-radius: 5rem;
+    margin: 20px;
+    border-radius: 8px;
     justify-self: center;
     align-self: center;
 }
 .a-title{
-    margin: 50px;
-    font-weight : 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-weight : 500;
 }
 .a-sub{
     margin: 20px 0;
 }
 .a-desc{
     font-weight: 300;
+}
+.a-container{
+    display: flex;
+}
+
+@media (max-width:600px) {
+    .a-container{
+        flex-direction: column;
+    }
 }

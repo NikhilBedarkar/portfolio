@@ -1,10 +1,10 @@
 <div class="certification">
   <h1 class="certification-title">Courses & Certifications</h1>
-  <mat-card  *ngFor="let c of certification ">
+  <mat-card class="certificate" *ngFor="let c of certification ">
     <mat-card-title-group>
       <mat-card-title>{{c.name}}</mat-card-title>
       <mat-card-subtitle>{{c.provider}}</mat-card-subtitle>
-      <button mat-button color="accent">Show credentials</button>
+      <button mat-button (click)="openCertificationTab(c.url)" color="primary">Show credentials</button>
     </mat-card-title-group>
-  </mat-card>
+  </mat-card> 
 </div>

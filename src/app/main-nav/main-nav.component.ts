@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import {MatDialogModule} from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 

@@ -16,4 +16,8 @@ export class CertificationsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openCertificationTab(url:string){
+    window.open( url, '_blank');
+  }
+
 }
