@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   panelOpenState=true;
-  constructor() { }
+
+  constructor() {
+   
+   }
 
   ngOnInit(): void {
     

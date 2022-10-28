@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { certifications } from './portfolioDetails';
+import { projectsToDisplay } from './portfolioDetails';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,6 +9,10 @@ export class DetailsService {
 
 get certification(){
   return certifications
+}
+
+get projects(){
+  return projectsToDisplay;
 }
 
 

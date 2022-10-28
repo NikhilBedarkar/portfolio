@@ -1,20 +1,27 @@
 <div class="portfolio">
         <h1 class="p-title">Projects</h1>
         <div class="p-container">
-            <mat-card class="example-card">
-                <mat-card-title >Online Shop</mat-card-title>
-                <mat-card-subtitle>Angular</mat-card-subtitle>
+            <mat-card *ngFor="let project of projects" class="project-card">
+                <mat-card-title >{{project.name | titlecase}}</mat-card-title>
+                <!-- <mat-card-subtitle class="card-subtitle"> -->
+                 
+                <!-- </mat-card-subtitle> -->
                 <mat-card-content>
-                  <p>This is angular project for online shop that sell fresh veggies.</p>
+                  <p>{{project.description}}</p>
                 </mat-card-content>
+                <div class="spacer"></div>
+                <mat-chip-list class="card-subtitle" aria-label="techStack">
+                  <mat-chip *ngFor="let t of project.technologies" color="primary">{{t}}</mat-chip>
+                </mat-chip-list>
                 <mat-divider inset></mat-divider>
                 <mat-card-actions>
-                  <button mat-button color="primary">Check it out</button>
-                  <button mat-button color="primary">Github</button>
+                  <button *ngIf="project.website" (click)="openCertificationTab(project.website)" mat-button color="primary">Check it out</button>
+                  <button (click)="openCertificationTab(project.github)" mat-button color="primary">Github</button>
                 </mat-card-actions>
                 <mat-card-footer>
-                
+                 
                 </mat-card-footer>
               </mat-card>
+
         </div>
 </div>

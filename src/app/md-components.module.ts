@@ -10,7 +10,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   exports : [
@@ -23,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
    MatProgressBarModule,
    MatFormFieldModule,
    MatInputModule,
-   MatCardModule
+   MatCardModule,
+   MatChipsModule
   ]
 })
 export class MdComponentsModule { }

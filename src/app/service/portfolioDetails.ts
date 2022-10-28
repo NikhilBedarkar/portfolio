@@ -18,6 +18,38 @@ export const certifications=[
 
 export const projectsToDisplay=[
     {
-        name:"online shop"
+        name:"ONLINE SHOP",
+        technologies:["Angular","Firebase RTDB"],
+        description:"This is angular project for online shop that sell fresh vegitables.",
+        github:"https://github.com/NikhilBedarkar/online-shop",
+        website:"https://online-shop-3f78d.web.app/",
+    },
+    {
+        name:"CRYPTO TRACKER",
+        technologies:["React"],
+        description:"Single page react application to view crypto currency prices live using third party apis.",
+        github:"https://github.com/NikhilBedarkar/crypto-tracker",
+        website:"https://nikhilbedarkar.github.io/crypto-tracker/",
+    },
+    {
+        name:"TIC-TAC-TOE",
+        technologies:["React"],
+        description:"tic-tac-toe game with history of moves made.",
+        github:"https://github.com/NikhilBedarkar/tic-tac-toe",
+        website:"https://nikhilbedarkar.github.io/tic-tac-toe/",
+    },
+    {
+        name:"TodoList",
+        technologies:["React"],
+        description:"This is angular project for online shop that sell fresh veggies.",
+        github:"https://github.com/NikhilBedarkar/TodoList",
+        website:"",
+    },
+    {
+        name:"Virtual Keyboard",
+        technologies:["JavaScript","HTML","CSS"],
+        description:"This is angular project for online shop that sell fresh veggies.",
+        github:"https://github.com/NikhilBedarkar/Virtual-Keyboard-and-graphical-password",
+        website:"",
     }
 ];
