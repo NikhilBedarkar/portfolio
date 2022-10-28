@@ -10,8 +10,8 @@
                   <p>{{project.description}}</p>
                 </mat-card-content>
                 <div class="spacer"></div>
-                <mat-chip-list class="card-subtitle" aria-label="techStack">
-                  <mat-chip *ngFor="let t of project.technologies" color="primary">{{t}}</mat-chip>
+                <mat-chip-list class="techStack" aria-label="techStack">
+                  <mat-chip *ngFor="let t of project.technologies" class="techStack-chip" color="primary">{{t}}</mat-chip>
                 </mat-chip-list>
                 <mat-divider inset></mat-divider>
                 <mat-card-actions>

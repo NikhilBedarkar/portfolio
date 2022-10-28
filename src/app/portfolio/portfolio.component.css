@@ -35,7 +35,7 @@
     margin: 50px 20px;
 }
 
-.card-subtitle{
+.techStack{
     margin: 10px;
 }
 
@@ -49,5 +49,8 @@
         justify-content: space-around;
         margin: 20px auto ;
         height: auto;
+    }
+    .techStack-chip{
+        font-size: small;
     }
 }

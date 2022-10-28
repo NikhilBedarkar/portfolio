@@ -41,14 +41,14 @@ export const projectsToDisplay=[
     {
         name:"TodoList",
         technologies:["React"],
-        description:"This is angular project for online shop that sell fresh veggies.",
+        description:"learning react demo project.",
         github:"https://github.com/NikhilBedarkar/TodoList",
         website:"",
     },
     {
         name:"Virtual Keyboard",
         technologies:["JavaScript","HTML","CSS"],
-        description:"This is angular project for online shop that sell fresh veggies.",
+        description:"Virtual Keyboard and graphical password (strategy used to avoid shoulder surfing.)",
         github:"https://github.com/NikhilBedarkar/Virtual-Keyboard-and-graphical-password",
         website:"",
     }

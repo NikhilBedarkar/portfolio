@@ -7,3 +7,7 @@
 .certificate{
     margin: 10px;
 }
+
+.spacer{
+    flex: 1 1;
+}
