@@ -41,6 +41,11 @@
     display: flex;
 }
 
+#name {
+    color: green;
+    font-weight: bold;
+}
+
 @media (max-width:600px) {
     .a-container{
         flex-direction: column;
