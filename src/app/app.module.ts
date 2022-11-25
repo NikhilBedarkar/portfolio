@@ -12,7 +12,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 import { IntroComponent } from './intro/intro.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { MatSidenavContainer } from '@angular/material/sidenav';
 import { DetailsService } from './service/details.service';
 import { EmailService } from './service/email.service';
 import { FormsModule } from '@angular/forms';

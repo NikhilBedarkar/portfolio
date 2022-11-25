@@ -20,4 +20,12 @@ describe('IntroComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
+  it('should render Name', () => {
+    const fixture = TestBed.createComponent(IntroComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Nikhil');
+  });
+  
 });

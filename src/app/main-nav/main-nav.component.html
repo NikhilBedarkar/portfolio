@@ -17,8 +17,9 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar class="top-toolbar " >
-      <!-- <div class="top-toolbar"> -->
-      <button
+      <div class="sub-toolbar">
+      <div class="title-toolbar">
+        <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
@@ -28,16 +29,17 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span routerLink="">Portfolio</span>
-      <span class="spacer"></span>
+    </div>
+      <!-- <span class="spacer"></span> -->
       <div *ngIf="(isHandset$ | async) === false" class="toolbar-list">
         <a mat-button routerLink=""><mat-icon aria-label="toolbar home icon">cottage</mat-icon></a>
         <a mat-button routerLink="about"> About</a>
         <a mat-button routerLink="skills">Skills</a>
         <a mat-button routerLink="certifications">Certifications</a>
         <a mat-button routerLink="portfolio">Portfolio</a>
-        <a mat-raised-button routerLink="contact" color="primary" >ContactMe</a>
       </div>
-    <!-- </div> -->
+      <a mat-raised-button routerLink="contact" color="primary" >Let's Connect</a>
+    </div>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>

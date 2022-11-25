@@ -28,12 +28,29 @@
     border-radius: 10px;
 }
 
+/* portfolio title */
 .p-title{
     align-items:center ;
     align-content: center;
+    font: 400 24px / 32px Roboto;
     text-align: center;
     margin: 50px 20px;
 }
+
+.project-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font: 400 10px;
+    margin: 20px 0;
+}
+
+.project-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 
 .techStack{
     margin: 10px;
