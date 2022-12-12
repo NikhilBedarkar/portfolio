@@ -15,6 +15,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { DetailsService } from './service/details.service';
 import { EmailService } from './service/email.service';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MdComponentsModule,
+    FontAwesomeModule,
     FormsModule
   ],
   providers: [DetailsService,EmailService],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DetailsService } from '../service/details.service';
+import { UtilService } from '../service/util.service';
 
 @Component({
   selector: 'app-certifications',
@@ -9,7 +10,7 @@ import { DetailsService } from '../service/details.service';
 export class CertificationsComponent implements OnInit {
   panelOpenState: boolean = false;
   certification;
-  constructor(detailsService:DetailsService) { 
+  constructor(detailsService:DetailsService,private utilService:UtilService) { 
     this.certification=detailsService.certification
   }
 
@@ -17,7 +18,7 @@ export class CertificationsComponent implements OnInit {
   }
 
   openCertificationTab(url:string){
-    window.open( url, '_blank');
+    this.utilService.openInNewTab(url);
   }
 
 }
